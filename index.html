@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro_cliente</title>
 </head>
 <body>
-    <h1>Formulario</h1>
+    <h1>Registro de Productos</h1>
+    <form id="registro-procdcutos" action="/api/producots" method="POST"> 
+
+        <label for="nombre" id="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br>
+        <label for="descripcion">Descripción:</label>
+        <textarea name="descripcion" id="descripcion" rows="5" required></textarea>
+        <br>
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" id="precio" max="3000" min="2000" required>
+        <br>
+        <label for="categoria">Categoría:</label>
+        <select name="categoria" id="categoria" required>
+            <option value="electronica">electronica</option>
+            <option value="ropa">ropa</option>
+            <option value="alimentos">alimentos</option>
+            <option value="hogar">hogar</option>
+        </select>
+        <label for="stock">stock</label>
+        <input type="number" name="stock" id="electronica" min="0" required>
+        <br>
+        <label for="stock"></label>
+        <br>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="nombre" id="nombre">
+         <br>
+         <label for="apellido">apellido</label>
+         <input type="text" name="apellido" placeholder="apellidos" id="apellido">
+         <br>
+         <label for="email">email</label>
+         <input type="text" name="email" id="email" placeholder="">
+         <br>
+         <br>
+         <br>
+
+         <button type="submit">Registrar Producto</button>
+
+
+
+
+        </div>
+        
+
+
+
+
+
+
+    </form>
 </body>
 </html>
